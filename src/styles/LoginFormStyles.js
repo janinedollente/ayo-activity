@@ -4,23 +4,24 @@ export const LoginFormStyles = {
       textAlign: 'center',
       marginTop: '100px',
       padding: '20px',
-      boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
       borderRadius: '15px',
       width: '300px',
       margin: 'auto',
-      backgroundColor: '#FFFFFF',
+      backgroundColor: '#E4EBF1',
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
       justifyContent: 'center',
       height: '80vh',
+      boxShadow: '10px 10px 20px #bfc7d1, -10px -10px 20px #ffffff', // Neumorphic box shadow
     },
     logo: {
       width: '80px',
-      height: '80px', // Set height equal to width to make it a circle
-      borderRadius: '50%', // Make the logo a circle
+      height: '80px',
+      borderRadius: '50%',
       marginBottom: '20px',
-      objectFit: 'cover', // Maintain the aspect ratio of the image
+      objectFit: 'cover',
+      boxShadow: 'inset 6px 6px 10px #bfc7d1, inset -6px -6px 10px #ffffff', // Neumorphic inset shadow for logo
     },
     input: {
       margin: '10px',
@@ -28,23 +29,24 @@ export const LoginFormStyles = {
       borderRadius: '5px',
       width: '100%',
       boxSizing: 'border-box',
-      boxShadow: 'inset 0 0 5px rgba(0, 0, 0, 0.1)',
       border: 'none',
-      transition: 'border-color 0.3s ease',
+      transition: 'box-shadow 0.3s ease', // Add transition for smooth effect
+      boxShadow: '5px 5px 10px #bfc7d1, -5px -5px 10px #ffffff', // Neumorphic box shadow
     },
     'input:focus': {
-      borderColor: '#007bff',
+      outline: 'none', // Remove focus outline
+      boxShadow: 'inset 5px 5px 10px #bfc7d1, inset -5px -5px 10px #ffffff', // Neumorphic inset shadow on focus
     },
     button: {
       padding: '10px',
       borderRadius: '5px',
-      background: '#80ADBC',
+      background: '#B1B9B8',
       color: '#fff',
       cursor: 'pointer',
       width: '100%',
-      boxShadow: 'inset 0 0 5px rgba(0, 0, 0, 0.1)',
       border: 'none',
       transition: 'background-color 0.3s ease',
+      boxShadow: '10px 10px 20px #bfc7d1, -10px -10px 20px #ffffff', // Neumorphic box shadow
     },
     'button:hover': {
       background: '#63B8FF',
